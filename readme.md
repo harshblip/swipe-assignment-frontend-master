@@ -12,7 +12,10 @@ Task -
 Originally, it only had a option to edit the invoice individually by clicking the edit button.
 So, the task was to upgrade the invoice management system by adding a bulk edit feature for the users. So that the user can select multiple invoice records at a time and edit them together.
 
+Technologies used -
+ReactJS, Redux, React-Router DOM, React Bootstrap
+
 Steps to install the project - 
-1. Clone the github repository using --git clone or just download the zip file
-2. Go inside the folder where project is downloaded. run npm install command to install all the dependencies.
-3. run npm start to run the project on localhost:3000
+1. Clone the github repository using ```git clone https://github.com/harshblip/swipe-assignment-frontend-master.git``` or just download the zip file
+2. Go inside the folder ```cd swipe-assignment-frontend-master```. run ```npm install``` command to install all the dependencies.
+3. run npm start to run the project on ```localhost:3000```
