@@ -12,7 +12,7 @@ function InvoiceBulkEdit() {
 
     const bulk = useSelector(bulkList);
     const [bulkData, setBulkData] = useState([...bulk]);
-    const [open, setOpen] = useState(false);
+    const [show, setShow] = useState(false);
     const [items, setItems] = useState([]);
 
     const handleInputChange = (index, field, value) => {
@@ -80,7 +80,7 @@ function InvoiceBulkEdit() {
             }
             return item;
         }));
-        setOpen(false);
+        setShow(false);
         setItems([]);
     };
 
@@ -262,18 +262,18 @@ function InvoiceBulkEdit() {
                                             className=" p-1 "
                                             onClick={() => {
                                                 setItems(invoice.items);
-                                                setOpen(true);
+                                                setShow(true);
                                             }}
                                         >
                                             <div className="d-flex align-items-center justify-content-center gap-2">
                                                 <BiSolidPencil />
                                             </div>
                                         </Button>
-                                        <Modal open={open}>
+                                        <Modal show={show}>
                                             <Modal.Header
                                                 closeButton
                                                 onClick={() => {
-                                                    setOpen(false);
+                                                    setShow(false);
                                                 }}
                                             >
                                                 <Modal.Title>Items</Modal.Title>
